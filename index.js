@@ -1,7 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
-const generateREADME = ({ title, description, installation, usage, contributing, tests, github, email }) =>
+const generateREADME = ({ title, description, installation, usage, license, contributing, tests, github, email }) =>
   `# ${title}
 
 ## Description
@@ -10,6 +10,7 @@ ${description}
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
+- [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
@@ -19,6 +20,9 @@ ${installation}
 
 ## Usage
 ${usage}
+
+## License
+This project is licensed under ${license}.
 
 ## Contributing
 ${contributing}
@@ -51,6 +55,11 @@ inquirer
       type: 'input',
       name: 'usage',
       message: 'How do you use your project?',
+    },
+    {
+      type: 'input',
+      name: 'license',
+      message: 'Enter the license for your project:',
     },
     {
       type: 'input',
