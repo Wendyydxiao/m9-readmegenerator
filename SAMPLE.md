@@ -18,7 +18,7 @@ Provide steps required to install your project to get the development environmen
 Provide instructions and examples for use.Include screenshots as needed.
 
 ## License
-This project is licensed under Provide license used in your project..
+This project is licensed under samplelicense.
 
 ## Contributing
 Provide guidelines for how to contribute to your application if allows to.
